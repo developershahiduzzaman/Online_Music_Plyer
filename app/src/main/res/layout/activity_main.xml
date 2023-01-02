@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/music_bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/music"
+        app:layout_constraintBottom_toTopOf="@+id/jcplayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556" />
+
+    <com.example.jean.jcplayer.view.JcPlayerView
+        android:id="@+id/jcplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:next_icon_color="@color/white"
+        app:pause_icon_color="@color/white"
+        android:background="#7C4DFF"
+        app:text_audio_title_color="@color/white"
+        app:play_icon_color="@color/white"
+        app:previous_icon_color="@color/white"
+        app:progress_color="@color/white"
+        app:random_icon_color="@color/white"
+        app:repeat_icon_color="@color/white"
+        app:repeat_one_icon_color="@color/white"
+        app:seek_bar_color="@color/white"
+        app:text_audio_current_duration_color="@color/white"
+        app:text_audio_duration_color="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>
